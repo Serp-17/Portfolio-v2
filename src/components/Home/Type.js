@@ -1,16 +1,16 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 
+const type = [
+  "Front-end developer",
+  "Open Source Contributor",
+]
+
 function Type() {
   return (
     <Typewriter
       options={{
-        strings: [
-          "Developer",
-          "Deep Learning Engineer",
-          "MERN Stack Developer",
-          "Open Source Contributor",
-        ],
+        strings: type,
         autoStart: true,
         loop: true,
         deleteSpeed: 50,
