@@ -23,7 +23,7 @@ const Footer = () => {
           <ul className="footer-icons">
             <li className="social-icons">
               <a
-                href={ socials.github="" }
+                href={ socials.github }
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -43,7 +43,7 @@ const Footer = () => {
             </li>
             <li className="social-icons">
               <a
-                href={ socials.instagram="" }
+                href={ socials.instagram }
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
