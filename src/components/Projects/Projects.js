@@ -21,7 +21,7 @@ const Projects = () => {
               <Col md={4} className="project-card">
                 <ProjectCard
                   imgPath={ editor }
-                  isBlog={false}
+                  isBlog={ false }
                   title={ item.title }
                   description={ item.description }
                   link={ item.url }

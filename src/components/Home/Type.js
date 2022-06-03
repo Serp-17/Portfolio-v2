@@ -6,7 +6,7 @@ const type = [
   "Open Source Contributor",
 ]
 
-function Type() {
+const Type = () => {
   return (
     <Typewriter
       options={{
