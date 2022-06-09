@@ -13,7 +13,6 @@ import {
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
-import socials from "../data/social.json";
 
 const NavBar = () => {
   const [expand, updateExpanded] = useState(false);
@@ -89,7 +88,7 @@ const NavBar = () => {
             </Nav.Item>
             <Nav.Item className="fork-btn">
               <Button
-                href={socials.github}
+                href={ process.env.REACT_APP_GITHUB }
                 target="_blank"
                 className="fork-btn-inner"
               >

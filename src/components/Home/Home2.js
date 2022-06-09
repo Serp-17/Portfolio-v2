@@ -7,7 +7,6 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-import socials from "../../data/social.json";
 
 const Home2 = () => {
   return (
@@ -60,7 +59,7 @@ const Home2 = () => {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href={ socials.github }
+                  href={ process.env.REACT_APP_GITHUB }
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -70,7 +69,7 @@ const Home2 = () => {
               </li>
               <li className="social-icons">
                 <a
-                  href={ socials.linkedin }
+                  href={ process.env.REACT_APP_LINKIDIN }
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -80,7 +79,7 @@ const Home2 = () => {
               </li>
               <li className="social-icons">
                 <a
-                  href={ socials.instagram }
+                  href={ process.env.REACT_APP_INSTAGRAM }
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"

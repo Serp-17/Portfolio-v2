@@ -8,10 +8,7 @@ import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
-const resumeLink =
-  "https://raw.githubusercontent.com/serp-17/Portfolio-v2/master/src/Assets/Sergey_Karpuk_cv.pdf";
-
-function ResumeNew() {
+const ResumeNew = () => {
   const [width, setWidth] = useState(1200);
 
   useEffect(() => {
@@ -35,7 +32,7 @@ function ResumeNew() {
         </Row>
 
         <Row className="resume">
-          <Document file={resumeLink} className="d-flex justify-content-center">
+          <Document file={process.env.REACT_APP_RESUME_LINK} className="d-flex justify-content-center">
             <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
           </Document>
         </Row>

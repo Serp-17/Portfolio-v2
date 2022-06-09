@@ -5,7 +5,6 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-import socials from "../data/social.json";
 
 const Footer = () => {
   let date = new Date();
@@ -23,7 +22,7 @@ const Footer = () => {
           <ul className="footer-icons">
             <li className="social-icons">
               <a
-                href={ socials.github }
+                href={ process.env.REACT_APP_GITHUB }
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -33,7 +32,7 @@ const Footer = () => {
             </li>
             <li className="social-icons">
               <a
-                href={ socials.linkedin }
+                href={ process.env.REACT_APP_LINKIDIN }
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -43,7 +42,7 @@ const Footer = () => {
             </li>
             <li className="social-icons">
               <a
-                href={ socials.instagram }
+                href={ process.env.REACT_APP_INSTAGRAM }
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
