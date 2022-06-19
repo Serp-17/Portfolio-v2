@@ -9,6 +9,7 @@ import {
   AiFillStar,
   AiOutlineHome,
   AiOutlineUser,
+  AiOutlineFundProjectionScreen,
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
@@ -63,7 +64,7 @@ const NavBar = () => {
               </Nav.Link>
             </Nav.Item>
 
-            {/* <Nav.Item>
+            <Nav.Item>
               <Nav.Link
                 as={Link}
                 to="/project"
@@ -74,7 +75,8 @@ const NavBar = () => {
                 />{" "}
                 Projects
               </Nav.Link>
-            </Nav.Item> */}
+            </Nav.Item>
+
 
             <Nav.Item>
               <Nav.Link

@@ -18,9 +18,9 @@ const Home2 = () => {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              <br />I am fluent in classics like
+              <br />I am fluent in classics like{" "}
               <i>
-                <b className="purple">Javascript. </b>
+                <b className="purple"> Javascript.</b>
               </i>
               <br />
               <br />
